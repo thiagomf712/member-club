@@ -18,6 +18,7 @@
   --gray-500: #756c71;
   --gray-600: #4a4448;
   --gray-700: #332b31;
+  --gray-700\60: #332b3199;
 
   --title-md: 700 1.5rem var(--font-family);
   --title-sm: 700 1.12rem var(--font-family);
@@ -38,4 +39,5 @@ html {
 body {
   background: var(--gray-200);
   color: var(--gray-500);
+  padding-inline: 0.75rem;
 }
