@@ -1,0 +1,56 @@
+#user {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  gap: 1rem;
+
+  & .user-image {
+    background: conic-gradient(
+      from 320deg,
+      #d658b3 0%,
+      #af74de 13%,
+      #6b84de 25%,
+      #5dcab7 38%,
+      #45b442 50%,
+      #5ec6b9 62%,
+      #698dd9 73%,
+      #b173dc 87%,
+      #d658b3 100%
+    );
+    padding: 0.125rem;
+    border-radius: 0.625rem;
+    height: 56px;
+    width: 56px;
+
+    & div {
+      background: var(--white);
+      padding: 0.125rem;
+      border-radius: 0.625rem;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      & img {
+        border-radius: 0.625rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  & .user-info {
+    display: grid;
+    gap: 0.25rem;
+
+    & p {
+      font: var(--title-sm);
+      color: var(--gray-600);
+    }
+
+    & span {
+      font: var(--text-xs);
+      color: var(--gray-500);
+    }
+  }
+}

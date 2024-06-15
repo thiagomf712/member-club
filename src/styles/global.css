@@ -20,6 +20,14 @@
   --gray-700: #332b31;
   --gray-700\60: #332b3199;
 
+  --gradient: linear-gradient(
+    90deg,
+    #2daa6e 0%,
+    #2daaaa 33.33%,
+    #856ccf 66.67%,
+    #d658b3 100%
+  );
+
   --title-md: 700 1.5rem var(--font-family);
   --title-sm: 700 1.12rem var(--font-family);
 
@@ -40,4 +48,17 @@ body {
   background: var(--gray-200);
   color: var(--gray-500);
   padding-inline: 0.75rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray-300);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gray-400);
 }

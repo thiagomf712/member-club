@@ -1,0 +1,46 @@
+#layout {
+  max-width: 57rem;
+  margin-inline: auto;
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+
+  & section {
+    background: var(--gray-100);
+    border-radius: 1rem;
+    border: 1px solid var(--gray-300);
+  }
+}
+
+@media (width >= 64em) {
+  #layout {
+    margin-top: 4rem;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+
+    grid-template:
+      'user membership-card membership-card'
+      'history membership-card membership-card'
+      'history membership-card membership-card'
+      'history progress progress';
+
+    & #user {
+      grid-area: user;
+      width: 320px;
+    }
+
+    & #membership-card {
+      grid-area: membership-card;
+    }
+
+    & #history {
+      grid-area: history;
+      overflow: auto;
+      max-height: 380px;
+    }
+
+    & #progress {
+      grid-area: progress;
+    }
+  }
+}

@@ -13,6 +13,7 @@
 
   & .input-container {
     /* padding: 0.5rem; */
+    max-width: 400px;
     background: var(--gray-300);
     border: 1px solid var(--gray-400);
     border-radius: 0.75rem;
