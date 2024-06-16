@@ -34,8 +34,8 @@
 
   & .cards-container {
     display: grid;
-    grid-template-columns: repeat(5, 56px);
-    grid-template-rows: repeat(2, 56px);
+    grid-template-columns: repeat(5, 55px);
+    grid-template-rows: repeat(2, 55px);
     gap: 0.5rem;
 
     & .card {

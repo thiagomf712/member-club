@@ -1,7 +1,7 @@
 #layout {
+  display: none;
   max-width: 57rem;
   margin-inline: auto;
-  display: grid;
   gap: 0.5rem;
   margin-top: 1.25rem;
 

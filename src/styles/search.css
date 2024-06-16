@@ -42,18 +42,19 @@
         font: var(--text-md);
       }
 
-      &:not(:placeholder-shown) + button:not(:hover) {
+      /* &:not(:placeholder-shown) + button:not(:hover) {
         background: var(--gray-700);
-      }
+      } */
 
-      &:placeholder-shown + button:hover {
+      /* &:placeholder-shown + button:hover {
         background: var(--gray-700\60);
-      }
+      } */
     }
 
     & button {
-      background: var(--gray-700\60);
+      background: var(--gray-700);
       border-radius: 0.5rem;
+      cursor: pointer;
       outline: none;
       border: none;
       width: 40px;
@@ -67,7 +68,12 @@
         color: var(--white);
       }
 
-      &:hover {
+      &:disabled {
+        background: var(--gray-700\60);
+        cursor: not-allowed;
+      }
+
+      &:not(:disabled):hover {
         background: var(--gray-600);
       }
     }

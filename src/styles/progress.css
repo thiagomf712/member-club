@@ -2,7 +2,6 @@
   padding: 1rem 1.25rem;
   display: flex;
   gap: 1.25rem;
-  align-items: flex-center;
   justify-content: space-between;
 
   & .progress-container {

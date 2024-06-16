@@ -1,0 +1,51 @@
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #00000090;
+  backdrop-filter: blur(1px);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+
+  & .modal-content {
+    background: var(--white);
+    width: 100%;
+    max-width: 380px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 0 #00000030;
+
+    & header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--gray-400);
+
+      & h3 {
+        font: var(--title-md);
+      }
+
+      & button {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--gray-500);
+        cursor: pointer;
+        border-radius: 9999px;
+        width: 2rem;
+        height: 2rem;
+
+        &:hover {
+          background: var(--gray-100);
+        }
+      }
+    }
+
+    & > div {
+      padding: 1rem;
+    }
+  }
+}

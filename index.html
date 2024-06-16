@@ -19,9 +19,9 @@
       <img src="src/assets/Logo.svg" alt="Logo" />
 
       <div class="input-container">
-        <input type="text" placeholder="ID do cartão" />
+        <input id="client-id" type="text" placeholder="ID do cartão" />
 
-        <button>
+        <button id="search-button" title="search" type="button" disabled>
           <img src="src/assets/ArrowElbowDownLeft.svg" alt="" />
         </button>
       </div>
@@ -193,6 +193,20 @@
           </li>
         </ul>
       </section>
+    </div>
+
+    <div id="modal">
+      <div class="modal-content">
+        <header>
+          <h3>Parabéns!!!</h3>
+
+          <button id="modal-close-button" type="button" title="close">x</button>
+        </header>
+
+        <div>
+          <p>Parabéns! Seu próximo corte é gratuito!</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
